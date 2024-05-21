@@ -1,0 +1,373 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+body {
+    font-family: "Poppins", sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Ensure box-sizing is applied to all elements */
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+/* landingPage */
+
+.landingSection {
+  padding: 0 120px;
+}
+
+.navbar-section {
+  background-color: #fff;
+  padding: 10px 15px;
+  position: fixed;
+  top: 0; /* Ensure it stays at the top */
+  left: 0;
+  width: 100%;
+  z-index: 1000; /* Ensure it is above other elements */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 10vh;
+  -webkit-box-shadow: -2px 1px 5px 0px rgba(217,208,217,1);
+  -moz-box-shadow: -2px 0.2px 5px 0px rgba(217,208,217,1);
+  box-shadow: -2px 3.4px 5px 0px rgba(217,208,217,1);
+}
+
+.navbar-icon {
+  display: flex;
+  align-items: center;
+}
+
+.rightNavbar {
+  display: flex;
+}
+
+.rightNavbar ul {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 0;
+  margin: 0;
+}
+
+.rightNavbar ul li {
+  list-style: none;
+  margin-right: 5rem;
+}
+
+.rightNavbar ul li a {
+  text-decoration: none;
+  font-size: 16px;
+  color: #4e4c4c;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  transition: color 0.3s ease, background-color 0.3s ease;
+}
+
+.rightNavbar ul li a:hover {
+  color: #ff5500;
+  background-color: #f8f9fa;
+  border-radius: 5px;
+}
+
+/* item section */
+
+.itemSection {
+  display: flex;
+  flex-direction: column;
+
+  width: 100%;
+  margin-top: 6.5vh; /* Add top margin equal to the navbar height */
+  padding: 20px; /* Add padding to the section */
+}
+.itemContainer {
+  display: flex;
+  flex-direction: row;
+  overflow-x: hidden;
+  padding: 10px; /* Add some padding to the sides */
+  margin-bottom: 20px; /* Add margin as needed */
+ 
+}
+.titleContainer {
+  display: flex;
+  align-items: center;
+}
+
+.btnScroll {
+  margin-left: 10px; /* Add space between buttons */
+  align-items: flex-end;
+  background-color: lightgray;
+  color: black; /* Button text color */
+  border: none;
+  border-radius: 50%;
+  height: 40px;
+  cursor: pointer; /* Cursor changes to pointer on hover */
+  font-size: 17px; /* Increase icon size */
+  line-height: 1; /* Adjust line height */
+}
+.btnScroll:hover {
+  background-color: #ff7700; /* Darken color on hover */
+}
+
+.titleContainer h2 {
+  margin-right: 10px; /* Add space between title and buttons */
+  flex-grow: 1;
+}
+
+.sectionHeader {
+  display: flex;
+  align-items: center;
+}
+
+
+
+.gallery {
+  width: 150px; /* Set a fixed width for each image */
+  flex: 0 0 auto; /* Ensure the image doesn't grow or shrink */
+}
+
+.gallery img {
+  width: 100%;
+}
+.chainSectionTop {
+  display: flex;
+  flex-direction: column;
+
+  width: 100%;
+  margin-top: 6.5vh; /* Add top margin equal to the navbar height */
+  padding: 20px; /* Add padding to the section */
+}
+.chainContainerTop{
+  display: flex;
+  flex-direction: row;
+ 
+  overflow-x: hidden;
+  padding: 10px; /* Add some padding to the sides */
+  margin-bottom: 20px; /* Add margin as needed */
+}
+
+.vendorBox1 {
+  width: 150px; /* Set a fixed width for each image */
+  flex: 0 0 auto; /* Ensure the image doesn't grow or shrink */
+  border-radius: 5px;
+  margin-right: 20px;
+  
+}
+
+.vendorBox1:hover {
+  cursor: pointer;
+  -webkit-box-shadow: -2px 1px 5px 0px rgba(217,208,217,1);
+  -moz-box-shadow: -2px 0.2px 5px 0px rgba(217,208,217,1);
+  box-shadow: -2px 3.4px 5px 0px rgba(217,208,217,1);
+}
+.firmImage img{
+  height:130px;
+ width: 100%;
+  border-radius: 2px;
+}
+
+/*chain Section */
+.chainSection {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  height: auto;
+  padding: 20px;
+}
+
+.chainContainer {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 40px 50px;
+}
+
+.vendorBox {
+  border-radius: 10px;
+  text-align: center;
+  background-color: #fff;
+  padding: 15px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.vendorBox:hover {
+  cursor: pointer;
+  box-shadow: -2px 3.4px 5px 0px rgba(217, 208, 217, 1);
+}
+
+.firmName_style {
+  font-size: 16px;
+  color: rgb(70, 70, 70);
+}
+
+.firmName_style:hover {
+  color: rgb(235, 4, 4);
+}
+
+.area-style {
+  font-size: 12px;
+  color: rgb(70, 70, 70);
+}
+
+.area-style:hover {
+  color: rgb(235, 4, 4);
+}
+
+.region-style {
+  font-size: 14px;
+  color: rgb(70, 70, 70);
+}
+
+.region-style:hover {
+  color: rgb(235, 4, 4);
+}
+
+.vendorBox img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+/* Add this to your CSS file */
+.loginSection {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 300px;
+  background: white;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  z-index: 1000;
+}
+
+.cancelButton {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+}
+
+.textSection {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.textSection p {
+  font-size: 24px;
+  margin: 0;
+}
+
+.textSection h5 {
+  margin: 5px 0;
+  color: grey;
+}
+
+.loginForm {
+  display: flex;
+  flex-direction: column;
+}
+
+.loginForm label {
+  margin-bottom: 8px;
+  font-weight: bold;
+}
+
+.loginForm input {
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.loginForm button {
+  padding: 10px;
+  background-color: #fc8019;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.loginForm button:hover {
+  background-color: #e87015;
+}
+
+.loginPage {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+}
+
+
+/*Footer Section */
+.Footer-section{
+  background-color: black;
+  height:50vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  color:white;
+  padding: 0 120px;
+}
+
+.col2 h4,.col3 h4,.col4 h4{
+
+ 
+ text-align: center;
+}
+.col2 ul li,.col31 ul li,.col32 ul li,.col4 ul li{
+  list-style: none;
+  color:rgb(167, 165, 165);
+  font-size: 15px;
+  font-family: "Poppins", sans-serif;
+  gap:2px;
+  cursor:pointer;
+}
+.col2 ul li:hover,.col31 ul li:hover,.col32 ul li:hover,.col4 ul li:hover{
+  color:rgb(255, 255, 255);
+}
+.col4 ul li select{
+  background-color:black;
+  color:rgb(167,165,165);
+  border:0.2px transparent lightgray;
+  border-radius: 5px;
+}
+
+.products{
+  margin-left: 50px;
+  width:90%;
+  justify-content: center;
+  align-items: center;
+  
+}
+.restuarantName{
+  width: 90%;
+  margin-left: 50px;
+  text-align: center;
+  font-size: 15px;
+  background-color: #3D0C11;
+  color: white;
+}
+
+.productItem{
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+  
+  background-color: white;
+}
+
